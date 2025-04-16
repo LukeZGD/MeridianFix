@@ -14,7 +14,7 @@ glRenderer = debugInfo == null ? 'unknown' : gl.getParameter(debugInfo.UNMASKED_
 userAgent = window.navigator.userAgent;
 window.onload = function() {
     if (glRenderer.includes("A10")) {
-        if (userAgent.includes("10_3")) {
+        if (userAgent.includes("10_3_2") || userAgent.includes("10_3_3")) {
             window.location.replace('https://lukezgd.github.io/MeridianFix/substrate');
         } else {
             window.location.replace('https://lukezgd.github.io/MeridianFix/substitute');
