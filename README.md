@@ -31,7 +31,7 @@ If your device was previously jailbroken with Meridian (or other jailbreak tools
 - A safer version of this is to remove the folders `/Applications/Cydia.app` and `/meridian` while jailbroken, using Filza, SSH, or other jailbroken methods.
 - Even better to just dump blobs using [Legacy iOS Kit](https://github.com/LukeZGD/Legacy-iOS-Kit) and restore using [turdus merula](https://sep.lol) instead.
 
-1. Run [Legacy iOS Kit](https://github.com/LukeZGD/Legacy-iOS-Kit), go to Other Utilities -> SSH Ramdisk
+1. Run [Legacy iOS Kit](https://github.com/LukeZGD/Legacy-iOS-Kit), go to Useful Utilities -> SSH Ramdisk
 1. Follow instructions. Once in the SSH Ramdisk, select Connect to SSH
 1. Run the following commands:
 ```
