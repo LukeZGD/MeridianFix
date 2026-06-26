@@ -16,7 +16,7 @@ window.onload = function() {
             window.location.replace('https://lukezgd.github.io/tns-sockport/v0rtex');
         } else if (glRenderer.includes("A6")) {
             window.location.replace('https://ios.cfw.guide/installing-socket/');
-        } else if (userAgent.includes("10_") {
+        } else if (userAgent.includes("10_")) {
             window.location.replace('https://lukezgd.github.io/tns-sockport');
         }
     }
