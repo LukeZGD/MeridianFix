@@ -2,42 +2,19 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MeridianFix</title>
+        <title>TNS Sockport/MeridianFix</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <script>
-// from https://github.com/joyqi/mobile-device-js
-canvas = document.createElement('canvas');
-gl = canvas.getContext('experimental-webgl');
-debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
-glRenderer = debugInfo == null ? 'unknown' : gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
-userAgent = window.navigator.userAgent;
-window.onload = function() {
-    if (glRenderer.includes("A10") || glRenderer.includes("A8")) {
-        if (userAgent.includes("10_3_2") || userAgent.includes("10_3_3")) {
-            window.location.replace('https://lukezgd.github.io/MeridianFix/substrate');
-        } else {
-            window.location.replace('https://lukezgd.github.io/MeridianFix/substitute');
-        }
-    } else if (userAgent.includes("like Mac OS X")) {
-        if (glRenderer.includes("A9")) {
-            window.location.replace('https://lukezgd.github.io/tns-sockport/v0rtex');
-        } else {
-            window.location.replace('https://lukezgd.github.io/tns-sockport');
-        }
-    }
-};
-    </script>
+    <script src="tns-redirect.js"></script>
     <body>
         <div align="center">
-        <h1>MeridianFix</h1>
-        <p>Note: If your device is not an A10(X) device (iPhone 7 or 7 Plus or A10X iPad Pros), it is recommended to <b>not</b> use MeridianFix. Use <a href="https://lukezgd.github.io/tns-sockport">TNS Sockport</a> instead.</p>
+        <h1>TNS Sockport/MeridianFix</h1>
         <hr/>
-        <p>Detected current device is not an iOS device on iOS 10.</p>
+        <p>Detected current device is not a 64-bit iOS device on iOS 10.</p>
         <h3>Other Links:</h3>
         <ul>
-        <li><a href="https://github.com/LukeZGD/MeridianFix/releases/latest">Latest App Release</a></li>
-        <li><a href="https://github.com/LukeZGD/MeridianFix">GitHub Repo</a></li>
+        <li><a href="https://github.com/LukeZGD/tns-sockport">TNS Sockport GitHub Repo</a></li>
+        <li><a href="https://github.com/LukeZGD/MeridianFix">MeridianFix GitHub Repo</a></li>
         </ul>
         </div>
     </body>
