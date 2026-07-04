@@ -14,7 +14,7 @@ window.onload = function() {
     } else if (userAgent.includes("like Mac OS X")) {
         if (glRenderer.includes("A9")) {
             window.location.replace('https://lukezgd.github.io/tns-sockport/v0rtex');
-        } else if (glRenderer.includes("A6")) {
+        } else if (glRenderer.includes("PowerVR")) {
             window.location.replace('https://ios.cfw.guide/installing-socket/');
         } else if (userAgent.includes("10_")) {
             window.location.replace('https://lukezgd.github.io/tns-sockport');
